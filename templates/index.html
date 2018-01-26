@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Certy</title>
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="{{ url_for("static",filename="fonts/icomoon/style.css") }}" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href={{url_for("static",filename="css/style.css")}} rel="stylesheet" type="text/css">
+    <link href={{url_for("static",filename="js/plugins/highlight/solarized-light.css")}} rel="stylesheet" type="text/css">
+
+    <!-- Modernizer -->
+    <script type="text/javascript" src="static/js/vendor/modernizr-3.3.1.min.js"></script>
+  </head>
+  <body>
+     <div class="ace-wrapper">
+         <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+             <div class="ace-head-inner">
+                 <div class="ace-head-container ace-container">
+                     <div class="ace-head-row">
+                         <div id="ace-head-col1" class="ace-head-col text-left">
+                             <a id="ace-logo" class="ace-logo" href="{{ url_for('index') }}">
+                                <img src="static/img/uploads/brand/logo.svg" alt="ace resume"><span>个人简历</span>
+                             </a>
+                         </div>
+                         
+                         <div id="ace-head-col2" class="ace-head-col text-right">
+                             <div class="ace-nav-container ace-container hidden-sm hidden-xs">
+                                 <nav id="ace-main-nav">
+                                    <ul class="clear-list">
+										<li><a href="{{ url_for('index') }}">个人信息</a></li>
+										<li><a href="{{ url_for('portfolio') }}">个人图片</a>
+										<li><a href="{{ url_for('category') }}">个人文章</a></li>
+										<li><a href="{{ url_for('contact') }}">联系我</a></li>
+									</ul>
+                                 </nav>
+                             </div>
+                         </div>
+
+
+                     </div>
+                 </div><!-- .ace-container -->
+             </div><!-- .ace-head-inner -->
+        </header><!-- #ace-header -->
+
+        <article id="ace-card" class="ace-card bg-primary">
+			<div class="ace-card-inner text-center">
+				<img class="avatar avatar-195" src="static/img/img1.jpeg" width="195" height="195" alt="">
+				<h1>陈俊勇</h1>
+				<p class="text-muted">计算机科学与技术专业 | 本科</p>
+
+			</div>
+			<footer class="ace-card-footer">
+				<a class="btn btn-lg btn-block btn-thin btn-upper " href="#">武汉理工大学</a>
+			</footer>
+		</article><!-- #ace-card -->
+
+        <div id="ace-content" class="ace-container-shift">
+            <div class="ace-container">
+
+                
+                    <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+
+                    </div><!-- .ace-nav-wrap -->
+
+                <div class="ace-paper-stock">
+                    <main class="ace-paper clearfix">
+                        <div class="ace-paper-cont clear-mrg">
+						
+						<!-- START: PAGE CONTENT -->
+    <div class="padd-box clear-mrg">
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-12 clear-mrg text-box">
+                    <h2 class="title-lg text-upper">About Me</h2>
+
+                    <p><b>Helo, I’m 陈俊勇!</b><br>
+                        我毕业于武汉理工大学计算机专业，在校期间学习成绩良好，获得过学校三等奖学金，在校期间，认真学习，努力提升自己的编码能力。在校期间做过Android开发项目，
+                        写过后台并成功配置到阿里云和腾讯云平台，使用的服务器为nginx ，在校期间也学习过前端，目前正在学习机器学习。目前学习和研究的方向为机器学习，
+                        熟练使用TensorFlow，Scikit-Learn等第三方开源架包，了解机器学习相关算法原理。
+                        掌握的编程语言有java,php,python。熟练使用数据库mysql开发，熟练掌握的版本协同工具有git, 编程坏境有window，linux。
+                    </p>
+
+
+                </div>
+            </div>
+        </section><!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">个人详细信息</h2>
+
+                    <dl class="dl-horizontal clear-mrg">
+                        <dt class="text-upper">个人姓名</dt>
+                        <dd>陈俊勇</dd>
+
+                        <dt class="text-upper">出生年月</dt>
+                        <dd>1996/04/05</dd>
+
+                        <dt class="text-upper">联系地址</dt>
+                        <dd>武汉理工大学余家头校区海虹四栋</dd>
+
+                        <dt class="text-upper">联系邮箱</dt>
+                        <dd>1042769007@qq.com</dd>
+
+                        <dt class="text-upper">手机号码</dt>
+                        <dd>15172420779</dd>
+
+                        <dt class="text-upper">毕业院校</dt>
+                        <dd>武汉理工大学</dd>
+
+                        <dt class="text-upper">最高学历</dt>
+                        <dd>大学本科</dd>
+
+                        <dt class="text-upper">就读专业</dt>
+                        <dd>计算机科学与技术学院</dd>
+                    </dl>
+                </div><!-- .col-sm-6 -->
+
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">所获得过的证书</h2>
+
+                    <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                        <strong class="progress-title">CET-4</strong>
+                    </div>
+
+                    <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                        <strong class="progress-title">校三等奖学金</strong>
+
+                    </div>
+
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+        </section><!-- .section -->
+
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">编程 技能</h2>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">Php & MySQL</strong>
+                    </div>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">Java</strong>
+                    </div>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">Python</strong>
+                    </div>
+
+                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">Linux</strong>
+                    </div>
+                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">Git</strong>
+                    </div>
+                </div><!-- .col-sm-6 -->
+
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">开发研究</h2>
+
+                    <ul>
+                        <li>Android开发</li>
+                        <li>python框架Django,Flask后台开发</li>
+                        <li>机器学习</li>
+                        <li>java后台开发</li>
+                    </ul>
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+        </section><!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-12 clear-mrg">
+                    <h2 class="title-thin text-muted">兴趣爱好</h2>
+
+                    <ul class="icon-list icon-list-col3 clearfix">
+                        <li><span class="ace-icon ace-icon-music"></span>看电影</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 算法研究</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 编程</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 打篮球</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 旅行</li>
+                        <li><span class="ace-icon ace-icon-music"></span> 滑雪</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 写博客</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 看纪录片</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 学习游泳</li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- .section -->
+
+
+    </div><!-- .padd-box -->
+<!-- END: PAGE CONTENT -->
+						
+                </div><!-- .ace-paper-cont -->
+            </main><!-- .ace-paper -->
+        </div><!-- .ace-paper-stock -->
+
+        </div><!-- .ace-container -->
+    </div><!-- #ace-content -->
+
+
+    <footer id="ace-footer" class="ace-container-shift">
+        <div class="ace-container">
+			<div class="ace-footer-cont clear-mrg">
+				<p class="text-center">Copyright &copy; 2017.Company name All rights reserved.//cdn.bootcss.com/jquery/1.12.2/jquery.min.js</p>				
+			</div>
+        </div><!-- .ace-container -->
+    </footer><!-- #ace-footer -->
+
+
+    <svg id="ace-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+        <polygon points="0,0,633,0,633,536" style="fill:#c0e3e7;stroke:purple;stroke-width:0" />
+    </svg>
+</div><!-- .ace-wrapper -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="static/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+<!--<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>-->
+<script type="text/javascript" src="static/js/plugins/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="static/js/plugins/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="static/js/plugins/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="static/js/plugins/progressbar.min.js"></script>
+<script type="text/javascript" src="static/js/plugins/slick.min.js"></script>
+
+<script type="text/javascript" src="static/js/options.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>
